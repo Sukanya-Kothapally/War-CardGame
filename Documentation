@@ -11,15 +11,23 @@ Winner of the game is the Player who has all cards(either Player1 or Player2) ac
 5. Continue the below logic until cards in either of each player deck count is 0
     5.1 Each player will open each card from top
     5.2 Check rank of each card
-        5.2.1  If rank of card drawn by the player is greater the that player adds all the cards drawn into his deck.
+        5.2.1  If rank of card drawn by the player1 is greater than player2, then player1 adds all the cards drawn into his deck and vice-versa.
         5.2.2  If rank of card is same, check for the count of cards in each players deck if it is 0, then the game is Tie
-        5.2.4  If the rank count of cards is not 0, draw the next cards and add the cards into a list.
-        5.2.5  Compare the ranks of latest drawn cards and repeat the step 5 until the rank of highest card is returned.
-    5.3 Add up all the cards in the list to the persons deck who has highest rank.
-6. Player who has all the cards is the winner.
+        5.2.4  If the rank count of cards is not 0, draw the next cards and add all the cards into a list
+        5.2.5  Compare the ranks of latest drawn cards and repeat the step '5' until the rank of highest card is returned
+    5.3 Add up all the cards in the list to the persons deck who has highest rank
+6. Player who has all the cards is the winner
 
-*********************************--------------------------------------------------------------*********************************
+****************************************************************************************************************************
 Cases/Assumptions:
-1. As the cards faces are not only integers but also alphabets, giving the cards Ranks is the best way.
-2. My comparisons are based on this rank as in who is the winner.
-3. count of cards decides the winner.
+1. As the cards faces are not only integers but also alphabets, giving the cards Ranks is the best way
+2. My comparisons are based on this rank as in who is the winner
+3. count of cards decides the winner
+4. In any turn if any of the players card count is 0 then the other player is considered winner
+
+*****************************************************************************************************************************
+If given more time:
+
+I would have generated the ranks of each card based on the suit(spades > hearts > diamonds > clubs)
+
+
